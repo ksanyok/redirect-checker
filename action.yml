@@ -1,0 +1,16 @@
+name: "Redirect Checker by PromoPilot"
+description: "Trace redirect chains and fail on loops, downgrades, long chains or broken final URLs."
+author: "Alexandr Krikun"
+branding:
+  icon: "corner-down-right"
+  color: "purple"
+inputs:
+  args:
+    description: "Arguments passed to the redirect-checker CLI, e.g. \"example.com\""
+    required: true
+runs:
+  using: composite
+  steps:
+    - name: Run redirect-checker
+      shell: bash
+      run: node "$GITHUB_ACTION_PATH/bin/cli.js" ${{ inputs.args }}

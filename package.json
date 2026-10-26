@@ -1,0 +1,55 @@
+{
+  "name": "@promopilot/redirect-checker",
+  "version": "1.0.0",
+  "description": "Trace redirect chains from the command line: every hop with 301/302/307/308 status, timing and meta refresh, plus loops, long chains, HTTPS downgrades, temporary redirects and broken final URLs. Bulk mode for migrations. Zero-dependency Node.js CLI, library and GitHub Action. Free online version by PromoPilot.",
+  "keywords": [
+    "redirect-checker",
+    "redirects",
+    "301-redirect",
+    "http-status",
+    "redirect-chain",
+    "seo",
+    "technical-seo",
+    "site-migration",
+    "http",
+    "devops",
+    "cli",
+    "nodejs",
+    "github-action",
+    "promopilot"
+  ],
+  "homepage": "https://promopilot.link/en/tools/redirect-checker.php?utm_source=github&utm_medium=repo&utm_campaign=tools&utm_content=redirect-checker",
+  "bugs": {
+    "url": "https://github.com/ksanyok/redirect-checker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksanyok/redirect-checker.git"
+  },
+  "license": "MIT",
+  "author": "Alexandr Krikun (https://github.com/ksanyok)",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "redirect-checker": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

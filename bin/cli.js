@@ -17,7 +17,7 @@ Options:
   --strict          Exit with code 1 on warnings too
   -h, --help        Show this help
 
-Online version (no install): https://promopilot.link/en/tools/redirect-checker.php
+Online version (no install): https://promopilot.link/en/tools/redirect-checker.php?utm_source=github&utm_medium=cli&utm_campaign=tools&utm_content=redirect-checker
 `;
 
 const args = process.argv.slice(2);
